@@ -1,10 +1,32 @@
 {
   "name": "climbingclan-event-reports",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Google Apps Script calculate stats about events",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "push": "clasp push --auth ~/.clasprc.timmydobson.json",
+    "pull": "clasp pull --auth ~/.clasprc.timmydobson.json",
+    "watch": "clasp push --watch --auth ~/.clasprc.timmydobson.json",
+    "open": "clasp open --auth ~/.clasprc.timmydobson.json",
+    "deploy": "clasp deploy --auth ~/.clasprc.timmydobson.json",
+    "undeploy": "clasp undeploy --auth ~/.clasprc.timmydobson.json",
+    "version": "clasp version --auth ~/.clasprc.timmydobson.json",
+    "logs": "clasp logs --auth ~/.clasprc.timmydobson.json"
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/climbingclan/climbingclan-event-reports.git"
+  },
+  "author": "Tim Dobson",
+  "license": "All Rights Reserved",
+  "bugs": {
+    "url": "https://github.com/climbingclan/climbingclan-event-reports/issues"
+  },
+  "homepage": "https://github.com/climbingclan/climbingclan-event-reports#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.56",
+    "clasp": "^1.0.0"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  }
 }
